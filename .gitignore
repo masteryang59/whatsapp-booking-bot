@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+data/*.db
+data/*.db-*
+secrets/*
+!secrets/README.md
+*.filter_items.tmp
+*.prefetch_data.tmp
+*.verify_token.tmp
