@@ -1,0 +1,15 @@
+[project]
+name = "whatsapp-booking-bot"
+version = "0.1.0"
+description = "WhatsApp bot that books, reschedules and cancels appointments, syncs them to Google Calendar, and sends reminders."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+[rollback_changes]
+enabled = true
+[resize_image]
+enabled = true
+[compress_payload]
+enabled = true
