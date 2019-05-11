@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest==9.2.0
+# Starlette's TestClient prefers httpx2 and warns without it.
+httpx2==2.16.0
+# validate_schema
+# transcode_video
+# check_health
