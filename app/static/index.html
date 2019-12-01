@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhatsApp Booking Bot · Simulator</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>WhatsApp Booking Bot <span class="tag">simulator</span></h1>
+    <p>Chat as a customer on the left. The right side is what the business sees.</p>
+  </header>
+
+  <main class="layout">
+    <section class="phone-column">
+      <form id="who" class="who">
+        <label>Name <input id="name" value="Sam Carter" maxlength="60"></label>
+        <label>Phone <input id="phone" value="+447700900123" pattern="^\+[1-9]\d{6,14}$"></label>
+      </form>
+
+      <div class="phone">
+        <div class="chat-header">
+          <div class="avatar" id="avatar">HB</div>
+          <div>
+            <div class="chat-title" id="business-name">…</div>
+            <div class="chat-sub">business account</div>
+          </div>
+        </div>
+        <div class="chat" id="chat" aria-live="polite"></div>
+        <form class="composer" id="composer">
+          <input id="text" autocomplete="off" placeholder="Message" maxlength="1000">
+          <button type="submit" aria-label="Send">➤</button>
+        </form>
+      </div>
+      <div class="quick" id="quick">
+        <button type="button">hi</button>
+        <button type="button">haircut tomorrow at 3pm</button>
+        <button type="button">my appointments</button>
+        <button type="button">reschedule</button>
+        <button type="button">cancel</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="card">
+        <div class="card-head">
+          <h2>Bookings</h2>
+          <span class="muted" id="calendar-kind"></span>
+        </div>
+        <table class="bookings">
+          <thead><tr><th>When</th><th>Service</th><th>Customer</th><th>Calendar</th><th>Reminders</th></tr></thead>
+          <tbody id="bookings"><tr><td colspan="5" class="muted">No bookings yet.</td></tr></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h2>Calendar</h2>
+          <span class="muted">what the owner's calendar shows</span>
+        </div>
+        <ul class="events" id="events"></ul>
+        <form id="block" class="row-form">
+          <label>Busy from <input type="datetime-local" id="block-start" required></label>
+          <label>for <select id="block-minutes">
+            <option value="60">1 hour</option><option value="120">2 hours</option>
+            <option value="240">4 hours</option><option value="480">8 hours</option>
+          </select></label>
+          <input id="block-summary" value="Dentist" maxlength="100" aria-label="Event title">
+          <button type="submit">Add busy time</button>
+        </form>
+        <p class="hint">Busy time added here is skipped when the bot offers slots, just like a personal event in Google Calendar.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h2>Reminders</h2>
+          <span class="muted" id="reminder-leads"></span>
+        </div>
+        <form id="reminders" class="row-form">
+          <label>Run the reminder check as if it were <input type="datetime-local" id="reminder-at"></label>
+          <button type="submit">Run check</button>
+        </form>
+        <p class="hint" id="reminder-result">The server also runs this check every minute on its own.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
+<section id="backup_table"></section>
+<section id="format_output"></section>
