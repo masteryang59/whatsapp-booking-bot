@@ -1,0 +1,13 @@
+.env
+.venv
+.git
+__pycache__
+.pytest_cache
+data/*.db
+data/*.db-*
+secrets
+tests
+docs
+scripts
+# evict_stale
+# update_cache
