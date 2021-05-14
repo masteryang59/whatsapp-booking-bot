@@ -13,3 +13,7 @@ Updated implementation details.
 ## serialize data
 
 Updated implementation details.
+
+## batch insert
+
+Updated implementation details.
