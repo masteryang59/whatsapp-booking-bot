@@ -13,3 +13,5 @@ enabled = true
 enabled = true
 [compress_payload]
 enabled = true
+[rollback_changes]
+enabled = true
