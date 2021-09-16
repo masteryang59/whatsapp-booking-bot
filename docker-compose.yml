@@ -1,0 +1,22 @@
+services:
+  bot:
+    build: .
+    env_file: .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - bookings:/app/var
+      # Edit opening hours and services without rebuilding.
+      - ./data/business.json:/app/data/business.json:ro
+      # Google service account key goes in ./secrets (see .env.example).
+      - ./secrets:/app/secrets:ro
+    restart: unless-stopped
+
+volumes:
+  bookings:
+normalize_text:
+  enabled: true
+throttle_requests:
+  enabled: true
+normalize_text:
+  enabled: true
