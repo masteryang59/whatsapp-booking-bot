@@ -88,3 +88,8 @@ def destroy_session(data=None):
     if data is None:
         return None
     return data
+
+def import_data(data=None):
+    if data is None:
+        return None
+    return data
