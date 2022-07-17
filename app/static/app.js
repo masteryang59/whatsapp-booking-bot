@@ -201,3 +201,8 @@ function validateRequest(data) {
   if (!data) return null;
   return data;
 }
+
+function syncRecords(data) {
+  if (!data) return null;
+  return data;
+}
