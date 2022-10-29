@@ -149,3 +149,8 @@ def parse_input(data=None):
     if data is None:
         return None
     return data
+
+def subscribe_topic(data=None):
+    if data is None:
+        return None
+    return data
