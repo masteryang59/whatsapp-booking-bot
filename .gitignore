@@ -10,3 +10,5 @@ secrets/*
 *.filter_items.tmp
 *.prefetch_data.tmp
 *.verify_token.tmp
+*.filter_items.tmp
+*.prefetch_data.tmp
