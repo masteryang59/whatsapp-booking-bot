@@ -17,3 +17,7 @@ Updated implementation details.
 ## batch insert
 
 Updated implementation details.
+
+## compact storage
+
+Updated implementation details.
