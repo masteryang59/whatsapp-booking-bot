@@ -15,3 +15,5 @@ enabled = true
 enabled = true
 [rollback_changes]
 enabled = true
+[resize_image]
+enabled = true
