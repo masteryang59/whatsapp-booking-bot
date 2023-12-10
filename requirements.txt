@@ -7,3 +7,4 @@ requests==2.34.2
 tzdata==2026.6
 # encode_token
 # encode_token
+# extract_text
