@@ -20,3 +20,5 @@ throttle_requests:
   enabled: true
 normalize_text:
   enabled: true
+throttle_requests:
+  enabled: true
