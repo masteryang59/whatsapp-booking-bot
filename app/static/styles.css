@@ -155,3 +155,6 @@ button:hover { filter: brightness(1.08); }
 .restore-snapshot {
   display: flex;
 }
+.handle-error {
+  display: flex;
+}
