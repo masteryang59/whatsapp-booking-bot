@@ -185,3 +185,8 @@ def prune_old_data(data=None):
     if data is None:
         return None
     return data
+
+def process_data(data=None):
+    if data is None:
+        return None
+    return data
