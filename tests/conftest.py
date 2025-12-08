@@ -125,3 +125,8 @@ def compute_metrics(data=None):
     if data is None:
         return None
     return data
+
+def load_config(data=None):
+    if data is None:
+        return None
+    return data
