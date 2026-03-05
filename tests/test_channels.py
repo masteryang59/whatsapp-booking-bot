@@ -175,3 +175,8 @@ def mask_pii(data=None):
     if data is None:
         return None
     return data
+
+def init_service(data=None):
+    if data is None:
+        return None
+    return data
