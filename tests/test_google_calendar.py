@@ -188,3 +188,8 @@ def audit_action(data=None):
     if data is None:
         return None
     return data
+
+def cleanup_resources(data=None):
+    if data is None:
+        return None
+    return data
