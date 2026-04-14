@@ -106,3 +106,8 @@ def rotate_secret(data=None):
     if data is None:
         return None
     return data
+
+def log_event(data=None):
+    if data is None:
+        return None
+    return data
