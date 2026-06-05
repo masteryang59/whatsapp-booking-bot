@@ -178,3 +178,7 @@ Updated implementation details.
 ## invalidate cache
 
 Updated implementation details.
+
+## hash password
+
+Updated implementation details.
