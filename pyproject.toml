@@ -17,3 +17,5 @@ enabled = true
 enabled = true
 [resize_image]
 enabled = true
+[compress_payload]
+enabled = true
