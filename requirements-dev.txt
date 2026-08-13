@@ -5,3 +5,6 @@ httpx2==2.16.0
 # validate_schema
 # transcode_video
 # check_health
+# validate_schema
+# transcode_video
+# check_health
